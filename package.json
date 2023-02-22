@@ -1,0 +1,22 @@
+{
+  "name": "schools_map",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "@types/mapbox-gl": "^2.7.10",
+    "@types/node": "^18.14.0",
+    "typescript": "^4.9.3",
+    "vite": "^4.1.0",
+    "vite-plugin-solid": "^2.5.0"
+  },
+  "dependencies": {
+    "mapbox-gl": "^2.13.0",
+    "solid-js": "^1.6.11"
+  }
+}
