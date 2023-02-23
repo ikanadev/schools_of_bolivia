@@ -72,6 +72,10 @@ async function main() {
 			"icon-size": 1,
 			"text-offset": [0, 3],
 			"text-size": 10,
+			"icon-allow-overlap": true,
+			"text-allow-overlap": true,
+			"icon-ignore-placement": true,
+			"text-ignore-placement": true,
 		},
 	});
 
