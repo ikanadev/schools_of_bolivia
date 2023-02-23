@@ -3,9 +3,13 @@ import { Coord, School } from "./types";
 
 export async function getCoords(): Promise<Coord> {
 	return new Promise<Coord>((res, rej) => {
-		navigator.geolocation.getCurrentPosition((pos) => {
-			res({ lat: pos.coords.latitude, lon: pos.coords.longitude });
-		}, rej);
+		navigator.geolocation.getCurrentPosition(
+			(pos) => {
+				res({ lat: pos.coords.latitude, lon: pos.coords.longitude });
+			},
+			rej,
+			{ enableHighAccuracy: true },
+		);
 	});
 }
 
