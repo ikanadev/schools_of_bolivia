@@ -1,31 +1,19 @@
 {
   "compilerOptions": {
-    "useDefineForClassFields": true,
-    "sourceMap": true,
-    "resolveJsonModule": true,
-    "baseUrl": "src",
-
-    "strict": true,
     "target": "ESNext",
+    "useDefineForClassFields": true,
     "module": "ESNext",
+    "lib": ["ESNext", "DOM"],
     "moduleResolution": "Node",
-    "allowSyntheticDefaultImports": true,
-    "esModuleInterop": true,
-    "jsx": "preserve",
-    "jsxImportSource": "solid-js",
-    "types": ["vite/client", "node"],
-    "noEmit": true,
+    "strict": true,
+    "resolveJsonModule": true,
     "isolatedModules": true,
-    "lib": ["ESNext", "DOM", "WebWorker"],
-
+    "esModuleInterop": true,
+    "noEmit": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "noImplicitReturns": true,
-    "skipLibCheck": true,
-    "paths": {
-      "@app/*": ["./*"]
-    }
+    "skipLibCheck": true
   },
-  "include": ["vite.config.ts", "**/*.ts", "**/*.tsx"],
-  "exclude": ["node_modules"]
+  "include": ["src"]
 }

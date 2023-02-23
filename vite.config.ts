@@ -1,5 +1,4 @@
 import { defineConfig } from 'vite';
-import solidPlugin from 'vite-plugin-solid';
 import path from 'path';
 
 export default defineConfig({
@@ -8,7 +7,7 @@ export default defineConfig({
           '@app': path.resolve(__dirname, './src'),
         },
       },
-      plugins: [solidPlugin()],
+      plugins: [],
       server: {
         port: 3030,
       },
